@@ -1,0 +1,19 @@
+asns:
+  - asn: "214940"
+    ipset: "bad_as214940"
+  - asn: "214943"
+    ipset: "bad_as214943"
+
+paths:
+  out_dir: "/etc/as-blocklist/blocklist"      
+  log_file: "/var/log/as-blocklist.log" 
+
+
+settings:
+  fetch_timeout_seconds: 20
+  bgpview_endpoint: "https://api.bgpview.io/asn/{asn}/prefixes"
+
+  sleep_between_requests_seconds: 3
+  max_retries: 5
+  backoff_initial_seconds: 1
+  backoff_max_seconds: 30
