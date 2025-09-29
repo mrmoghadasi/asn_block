@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 # Exit on any error
@@ -89,4 +88,3 @@ echo "The fetch and apply scripts will run automatically based on the timer conf
 echo "To manually trigger the scripts, run:"
 echo "  sudo systemctl start asblock-fetch.service"
 echo "  sudo systemctl start asblock-apply.service"
-```
