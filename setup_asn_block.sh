@@ -19,7 +19,7 @@ echo -e "${GREEN}Starting installation of asn_block...${NC}"
 # Install system dependencies
 echo "Installing system dependencies..."
 apt update
-apt install -y iptables iptables-persistent python3 python3-pip git
+apt install -y iptables iptables-persistent python3 python3-pip git ipset jq
 
 # Create directory for configuration
 CONFIG_DIR="/etc/as-blocklist"
