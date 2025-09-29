@@ -1,0 +1,8 @@
+[Unit]
+Description=Apply per-AS CIDR files to ipset/iptables
+
+[Service]
+Type=oneshot
+ExecStart=/etc/as-blocklist/asblock_apply.py
+User=root
+Group=root

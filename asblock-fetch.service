@@ -1,0 +1,8 @@
+[Unit]
+Description=Fetch AS prefixes into per-AS files
+
+[Service]
+Type=oneshot
+ExecStart=/etc/as-blocklist/asblock_fetch.py
+User=root
+Group=root

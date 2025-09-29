@@ -1,0 +1,10 @@
+[Unit]
+Description=Run asblock-fetch periodically
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=15min
+Unit=asblock-fetch.service
+
+[Install]
+WantedBy=timers.target
