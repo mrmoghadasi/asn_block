@@ -40,10 +40,10 @@ chmod 644 "$CONFIG_DIR/as-blocklist.yaml"
 
 # Copy Python scripts to /usr/local/bin
 echo "Installing scripts to /usr/local/bin..."
-cp "$TEMP_DIR/asn_block/asblock_fetch.py" "$CONFIG_DIR/asblock_fetch.py"
-cp "$TEMP_DIR/asn_block/asblock_apply.py" "$CONFIG_DIR/asblock_apply.py"
-chmod 755 "$CONFIG_DIR/asblock_fetch.py"
-chmod 755 $CONFIG_DIR/asblock_apply.py"
+cp "$TEMP_DIR/asn_block/asblock_fetch.py" /usr/local/bin/asblock_fetch.py
+cp "$TEMP_DIR/asn_block/asblock_apply.py" /usr/local/bin/asblock_apply.py
+chmod 755 /usr/local/bin/asblock_fetch.py
+chmod 755 /usr/local/bin/asblock_apply.py
 
 # Install Python dependencies
 echo "Installing Python dependencies..."
