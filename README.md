@@ -62,6 +62,12 @@ The `asn_block` project automates blocking IP ranges for specified ASNs. It uses
    sudo systemctl start asblock-apply.timer
    ```
 
+## Easy Installation
+
+```bash
+sh <(curl -s https://raw.githubusercontent.com/mrmoghadasi/asn_block/main/setup_asn_block.sh)
+```
+
 ## Usage
 
 - Edit `as-blocklist.yaml` to specify the ASNs to block and any source settings.
