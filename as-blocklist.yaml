@@ -17,3 +17,7 @@ settings:
   max_retries: 5
   backoff_initial_seconds: 1
   backoff_max_seconds: 30
+
+  prune_orphan_files: true
+  prune_orphan_sets: true
+  
